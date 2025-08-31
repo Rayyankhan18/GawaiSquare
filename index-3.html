@@ -31,6 +31,34 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <style>
+        .section-blend {
+            position: relative;
+            height: 100px;
+            overflow: hidden;
+            margin-top: -50px;
+            z-index: 1;
+        }
+        .blend-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200%;
+            background: linear-gradient(to bottom, #f8f9fa 0%, #f8f9fa 50%, #ffffff 100%);
+            border-radius: 0 0 50% 50% / 0 0 100% 100%;
+            transform: scale(1.5);
+        }
+        .working-process-one {
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 2;
+        }
+        .project-two {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body class="body-gray-bg">
@@ -207,33 +235,36 @@
                 <img src="assets/img/shape/banner-one__shape3.png" alt="#">
             </div>
             <div class="container">
-                <div class="banner-one__inner">
-                    <div class="banner-one__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="sub-title">
-                            <h5>Senior Web Developer</h5>
-                        </div>
-                        <div class="big-title">
-                            <h2>Hi I’m Jhon Smith<br>Web Developer</h2>
-                        </div>
-                        <div class="text">
-                            <p>There are many variations of passages of available, but the<br> majority have suffered
-                                randomised words.</p>
-                        </div>
-                        <div class="btn-box">
-                            <a class="thm-btn" href="#">
-                                <span class="txt">
-                                    Just Say Hello
-                                    <i class="icon-next"></i>
-                                </span>
-                            </a>
+                <div class="banner-one__inner row d-flex align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="banner-one__content wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="sub-title">
+                                <h5>Premium Co-Working Space</h5>
+                            </div>
+                            <div class="big-title">
+                                <h2>Your Ideal Workspace<br>in Bangalore</h2>
+                            </div>
+                            <div class="text">
+                                <p>Experience a vibrant community with premium amenities, flexible plans, and everything you need to grow your business.</p>
+                            </div>
+                            <div class="btn-box">
+                                <a class="thm-btn" href="#">
+                                    <span class="txt">
+                                        Book a Tour
+                                        <i class="icon-next"></i>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="banner-one__img wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="inner">
-                            <img src="assets/img/slider/banner-one__mian-img.jpg" alt="banner">
+                    <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                        <div class="banner-one__img wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms" style="position: relative; z-index: 1; width: 100%;">
+                            <div class="inner" style="overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                                <img src="assets/img/slider/Photo-9.jpeg" alt="Gawai Square Workspace" class="img-fluid" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease; object-fit: cover; min-height: 400px;">
+                            </div>
+                            <div class="banner-one__img-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%); z-index: -1; border-radius: 15px;"></div>
                         </div>
-                        <div class="banner-one__img-bg"></div>
                     </div>
                 </div>
             </div>
@@ -251,10 +282,10 @@
                     <div class="col-xl-5">
                         <div class="about-two__content">
                             <div class="sec-title-two">
-                                <h2>We’re Not Average <br> <span>Web Design</span> Company</h2>
+                                <h2>About <span>Gawai Square</span></h2>
                                 <p>
-                                    Web design is not about making a website—it’s about making an investment in your
-                                    organization. Successful web design takes into account more than just aesthetics.
+                                    Looking for a professional, fully-furnished office space in central Bangalore?
+                                    Gawai Square offers move-in-ready private offices designed to support growing teams in a dynamic work environment.
                                 </p>
                             </div>
                             <div class="about-two__content-list">
@@ -264,7 +295,8 @@
                                             <span class="icon-check"></span>
                                         </div>
                                         <div class="title">
-                                            <h4>We build websites with design them to convert</h4>
+                                            <h4>Package Includes</h4>
+                                            <p>Access to space, Dedicated Desk, Conference room, Access Control, Tea/Coffee and Drinking Water, High-Speed Internet, Electricity with Power Backup, Air Conditioned, Office Maintenance, Security, Reception services, Business Lounge</p>
                                         </div>
                                     </li>
                                     <li>
@@ -272,7 +304,8 @@
                                             <span class="icon-check"></span>
                                         </div>
                                         <div class="title">
-                                            <h4>Your website is like a business card, it should look good</h4>
+                                            <h4>Recreational Activities</h4>
+                                            <p>Table Tennis / Foosball / Carrom / Uno / Board Games / Café Lounge</p>
                                         </div>
                                     </li>
                                     <li>
@@ -280,23 +313,44 @@
                                             <span class="icon-check"></span>
                                         </div>
                                         <div class="title">
-                                            <h4>Creative minds behind wacky websites</h4>
+                                            <h4>Prime Location</h4>
+                                            <p>Easy accessibility to Metro / Bus stations is a 5 min walk. In the vicinity of Hotels, Banks, Major Government Offices, Major Locations, Roads and Restaurants.</p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="about-two__btn-box">
-                                <a class="thm-btn" href="#">
-                                    <span class="txt">Learn More</span>
+                                <a class="thm-btn" href="#" id="seeMoreBtn">
+                                    <span class="txt">See More</span>
                                     <i class="icon-next"></i>
                                 </a>
                             </div>
+                            <div id="moreInfo" style="display: none; margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
+                                <h4>Discover the Ideal Dedicated Office Space in Bangalore with Gawai Square</h4>
+                                <p>Unlock the perfect workspace for your growing team at Gawai Square. Our fully-furnished, move-in-ready private offices are thoughtfully designed to offer a productive, professional environment that supports your business's growth.</p>
+                                <p>Enjoy the peace of mind that comes with lockable, secure office spaces, alongside access to a suite of premium shared amenities—including high-speed Wi-Fi, modern conference rooms, and comfortable common areas.</p>
+                                <p>Whether you're a startup, a scaling business, or an established company, Gawai Square provides the flexibility, convenience, and infrastructure you need to thrive.</p>
+                                <p>Elevate your work experience—choose Gawai Square and take your business to the next level.</p>
+                            </div>
+                            <script>
+                                document.getElementById('seeMoreBtn').addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    var moreInfo = document.getElementById('moreInfo');
+                                    if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                                        moreInfo.style.display = 'block';
+                                        this.querySelector('.txt').textContent = 'Show Less';
+                                    } else {
+                                        moreInfo.style.display = 'none';
+                                        this.querySelector('.txt').textContent = 'See More';
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
 
                     <div class="col-xl-7">
                         <div class="about-two__img float-bob-y">
-                            <img src="assets/img/about/about-two__img1.png" alt="image">
+                            <img src="assets/img/slider/Photo-2.jpeg" alt="Gawai Square Office Space" class="img-fluid" style="border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
                         </div>
                     </div>
 
@@ -327,7 +381,7 @@
             <div class="container">
                 <div class="cases-one__top">
                     <div class="inner-title">
-                        <h2>Some Of Our Recent<br>Cases Studies</h2>
+                        <h2>Our Gallery<br>
                     </div>
 
                     <div class="swiper-nav-style2">
@@ -390,15 +444,7 @@
                             <div class="swiper-slide">
                                 <div class="single-cases-one">
                                     <div class="single-cases-one__img">
-                                        <img src="assets/img/resource/cases-one__img1.jpg" alt="cases">
-                                        <div class="overlay-content text-center">
-                                            <h3><a href="#">Website Design</a></h3>
-                                            <p>We’re a team of hard-core nerds & we’re bringing more
-                                                of you that you marketing business advantage.</p>
-                                            <div class="overlay-one-btn">
-                                                <a href="#"><span class="icon-next"></span></a>
-                                            </div>
-                                        </div>
+                                        <img src="assets/img/slider/Photo-11.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 300px; object-fit: cover;">
                                     </div>
                                 </div>
                             </div>
@@ -408,15 +454,7 @@
                             <div class="swiper-slide">
                                 <div class="single-cases-one">
                                     <div class="single-cases-one__img">
-                                        <img src="assets/img/resource/cases-one__img2.jpg" alt="cases">
-                                        <div class="overlay-content text-center">
-                                            <h3><a href="#">Website Design</a></h3>
-                                            <p>We’re a team of hard-core nerds & we’re bringing more
-                                                of you that you marketing business advantage.</p>
-                                            <div class="overlay-one-btn">
-                                                <a href="#"><span class="icon-next"></span></a>
-                                            </div>
-                                        </div>
+                                        <img src="assets/img/slider/Photo-13.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 300px; object-fit: cover;">
                                     </div>
                                 </div>
                             </div>
@@ -426,15 +464,27 @@
                             <div class="swiper-slide">
                                 <div class="single-cases-one">
                                     <div class="single-cases-one__img">
-                                        <img src="assets/img/resource/cases-one__img3.jpg" alt="cases">
-                                        <div class="overlay-content text-center">
-                                            <h3><a href="#">Website Design</a></h3>
-                                            <p>We’re a team of hard-core nerds & we’re bringing more
-                                                of you that you marketing business advantage.</p>
-                                            <div class="overlay-one-btn">
-                                                <a href="#"><span class="icon-next"></span></a>
-                                            </div>
-                                        </div>
+                                        <img src="assets/img/slider/Photo-14.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 300px; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Cases One-->
+                            
+                            <!--Start Single Cases One-->
+                            <div class="swiper-slide">
+                                <div class="single-cases-one">
+                                    <div class="single-cases-one__img">
+                                        <img src="assets/img/slider/Photo-1.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 300px; object-fit: cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Cases One-->
+                            
+                            <!--Start Single Cases One-->
+                            <div class="swiper-slide">
+                                <div class="single-cases-one">
+                                    <div class="single-cases-one__img">
+                                        <img src="assets/img/slider/Photo-16.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 300px; object-fit: cover;">
                                     </div>
                                 </div>
                             </div>
@@ -446,175 +496,9 @@
         </section>
         <!--End Cases One-->
 
-        <!--Start Skills One-->
-        <div id="Amenities"></div>
-        <section class="skills-one">
-            <div class="container">
-                <div class="sec-title text-center">
-                    <div class="sub-title">
-                        <h4>My Resume</h4>
-                    </div>
-                    <h2>Education & Experiences</h2>
-                </div>
-                <div class="row">
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInLeft" data-wow-delay="0.1s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-1.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Defodrill University</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInRight" data-wow-delay="0.1s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-2.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Microsoft</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInLeft" data-wow-delay="0.2s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-3.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Rajshahi Polytechnic</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInRight" data-wow-delay="0.2s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-4.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Apple</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInLeft" data-wow-delay="0.3s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-5.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Rajshahi School</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                    <!--Start Single Skills One-->
-                    <div class="col-xl-6 col-lg-6 wow animated fadeInRight" data-wow-delay="0.1s">
-                        <div class="skills-one__single">
-                            <div class="skills-one__single-inner">
-                                <div class="skills-one__single-left-box">
-                                    <div class="skills-one__single-icon">
-                                        <img src="assets/img/icon/skills/skills1-6.png" alt="#">
-                                    </div>
-                                    <div class="skills-one__single-title">
-                                        <h3>Google</h3>
-                                        <p>Senior Web Developer</p>
-                                    </div>
-                                </div>
-                                <div class="skills-one__single-right-box">
-                                    <div class="skills-one__single-btn-box">
-                                        <a href="#"><span class="icon-up-right-arrow"></span></a>
-                                    </div>
-                                    <div class="skills-one__single-date-box">
-                                        <p>November 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Skills One-->
-                </div>
-            </div>
-        </section>
-        <!--End Skills One-->
-
         <!--Start Working Process One-->
         <div id="Process"></div>
-        <section class="working-process-one">
+        <section id="Amenities" class="working-process-one">
             <div class="working-process-one__shape1 float-bob-x">
                 <img src="assets/img/shape/working-process__shape1.png" alt="shapes">
             </div>
@@ -629,7 +513,7 @@
                     <div class="sub-title">
                         <h4>Our Working Process</h4>
                     </div>
-                    <h2>How Does We Work?</h2>
+                    <h2>How Do We Work?</h2>
                 </div>
                 <div class="row">
 
@@ -710,16 +594,17 @@
         </section>
         <!--End Working Process One-->
 
- <!--Start Project Two-->
-        <section class="project-two">
+        <div class="section-blend">
+            <div class="blend-shape"></div>
+        </div>
+
+        <!--Start Project Two-->
+        <section class="project-two" style="margin-top: 0; padding-top: 80px;">
             <div class="container">
                 <div class="sec-title-three text-center">
                     <div class="sub-title">
-                        <h4>Cases Studies</h4>
+                        <h4>Workspaces</h4>
                     </div>
-                    <h2>
-                        Some Of Our Recent Works
-                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
@@ -769,11 +654,7 @@
                                     <div class="swiper-slide">
                                         <div class="project-two__single">
                                             <div class="project-two__single-img">
-                                                <img src="assets/img/project/project-two__img1.jpg" alt="image">
-                                                <div class="overlay-title">
-                                                    <h4>Marketing</h4>
-                                                    <h3><a href="#">Digital Marketing Growth</a></h3>
-                                                </div>
+                                                <img src="assets/img/slider/Photo-11.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 250px; object-fit: cover;">
                                             </div>
                                         </div>
                                     </div>
@@ -783,11 +664,7 @@
                                     <div class="swiper-slide">
                                         <div class="project-two__single">
                                             <div class="project-two__single-img">
-                                                <img src="assets/img/project/project-two__img2.jpg" alt="image">
-                                                <div class="overlay-title">
-                                                    <h4>Marketing</h4>
-                                                    <h3><a href="#">Digital Marketing Growth</a></h3>
-                                                </div>
+                                                <img src="assets/img/slider/Photo-13.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 250px; object-fit: cover;">
                                             </div>
                                         </div>
                                     </div>
@@ -797,11 +674,7 @@
                                     <div class="swiper-slide">
                                         <div class="project-two__single">
                                             <div class="project-two__single-img">
-                                                <img src="assets/img/project/project-two__img3.jpg" alt="image">
-                                                <div class="overlay-title">
-                                                    <h4>Marketing</h4>
-                                                    <h3><a href="#">Digital Marketing Growth</a></h3>
-                                                </div>
+                                                <img src="assets/img/slider/Photo-14.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 250px; object-fit: cover;">
                                             </div>
                                         </div>
                                     </div>
@@ -811,11 +684,17 @@
                                     <div class="swiper-slide">
                                         <div class="project-two__single">
                                             <div class="project-two__single-img">
-                                                <img src="assets/img/project/project-two__img4.jpg" alt="image">
-                                                <div class="overlay-title">
-                                                    <h4>Marketing</h4>
-                                                    <h3><a href="#">Digital Marketing Growth</a></h3>
-                                                </div>
+                                                <img src="assets/img/slider/Photo-1.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 250px; object-fit: cover;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Single Project Two-->
+
+                                    <!--Start Single Project Two-->
+                                    <div class="swiper-slide">
+                                        <div class="project-two__single">
+                                            <div class="project-two__single-img">
+                                                <img src="assets/img/slider/Photo-16.jpeg" alt="Gawai Square Workspace" style="width: 100%; height: 250px; object-fit: cover;">
                                             </div>
                                         </div>
                                     </div>
@@ -843,114 +722,11 @@
         <!--End Project Two-->
 
 
-        <!--Start Blog One-->
-        <div id="Location"></div>
-        <section class="blog-one">
-            <div class="container">
-                <div class="sec-title text-center">
-                    <div class="sub-title">
-                        <h4>Blog & News</h4>
-                    </div>
-                    <h2>Read Our Latest Blog</h2>
-                </div>
-                <div class="row">
-                    <!--Start Single Blog One-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img-box">
-                                <img src="assets/img/blog/blog-one-1.jpg" alt="#">
-                            </div>
-                            <div class="blog-one__single-content">
-                                <div class="meta-box">
-                                    <ul class="meta-info">
-                                        <li>
-                                            <div class="line"></div>
-                                            <p><a href="#">Design</a></p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-calendar"></span>
-                                            </div>
-                                            <p><a href="#">Sep 30, 2022</a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="blog-one__single-content-meta-box-title-box">
-                                    <h3><a href="blog-details.html">Sharing You and Your Company<br>with The World</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Blog One-->
-                    <!--Start Single Blog One-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img-box">
-                                <img src="assets/img/blog/blog-one-2.jpg" alt="#">
-                            </div>
-                            <div class="blog-one__single-content">
-                                <div class="meta-box">
-                                    <ul class="meta-info">
-                                        <li>
-                                            <div class="line"></div>
-                                            <p><a href="#">Development</a></p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-calendar"></span>
-                                            </div>
-                                            <p><a href="#">Sep 30, 2022</a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="blog-one__single-content-meta-box-title-box">
-                                    <h3><a href="blog-details.html">I Will Deliver The Digital Results<br>As You
-                                            Desire</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Blog One-->
-                    <!--Start Single Blog One-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-img-box">
-                                <img src="assets/img/blog/blog-one-3.jpg" alt="#">
-                            </div>
-                            <div class="blog-one__single-content">
-                                <div class="meta-box">
-                                    <ul class="meta-info">
-                                        <li>
-                                            <div class="line"></div>
-                                            <p><a href="#">Design</a></p>
-                                        </li>
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-calendar"></span>
-                                            </div>
-                                            <p><a href="#">Sep 30, 2022</a></p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="blog-one__single-content-meta-box-title-box">
-                                    <h3><a href="blog-details.html">Will Reach Your Audience and<br>Convert Your
-                                            Leads</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Blog One-->
-                </div>
-            </div>
-        </section>
-        <!--End Blog One-->
-
         <!--Start Cta One-->
         <section class="cta-one">
             <div class="container">
                 <div class="cta-one__inner text-center">
-                    <div class="cta-one__shape1 float-bob-y">
+                    <div class="cta-one__shape1 float-bob-x">
                         <img src="assets/img/shape/cta-one__shape1.png" alt="#">
                     </div>
                     <div class="cta-one__shape2 float-bob-y">
@@ -969,7 +745,7 @@
                         <img src="assets/img/shape/cta-one__shape6.png" alt="#">
                     </div>
                     <div class="cta-one__inner-title-box">
-                        <h2>Have A Project In Mind? Let’s Get Start.</h2>
+                        <h2>Have A Project In Mind? Let’s Get Started</h2>
                     </div>
                     <div class="cta-one__inner-text-box">
                         <p>
@@ -988,9 +764,31 @@
         </section>
         <!--End Cta One-->
 
+        <!--Start Location Map-->
+        <section id="Location" class="location-map" style="padding: 100px 0; background: #f9f9f9;">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <div class="sub-title">
+                        <h4>Our Location</h4>
+                    </div>
+                    <h2>Find Us On The Map</h2>
+                </div>
+                <div class="map-container" style="margin-top: 40px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9999999999995!2d77.611111!3d12.972442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1665b3c9cf9f%3A0x4f5d5d5d5d5d5d5d!2sGawai%20Square!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <!--End Location Map-->
+
         <!--Start Get In Touch One-->
-        <div id="contact"></div>
-        <section class="get-in-touch-one">
+        <section id="Contact" class="get-in-touch-one">
             <div class="container">
                 <div class="row">
                     <!--Start Get In Touch One Content-->
@@ -1008,7 +806,7 @@
                                         <span class="icon-pin"></span>
                                     </div>
                                     <div class="text-box">
-                                        <p>2976 Westheimer Road, Santa Valley Ana<br>New York City, 26790</p>
+                                        <p>No. 4 Union Street, Gawai Square (Off Infantry Road)<br>Bangalore, Shivajinagar 560001</p>
                                     </div>
                                 </li>
                                 <li>
@@ -1017,7 +815,7 @@
                                     </div>
                                     <div class="text-box">
                                         <p>
-                                            <a href="tel:880237255">+(880) 237 255, +(880) 237 255</a>
+                                            <a href="tel:880237255">+91 8904050698</a>
                                         </p>
                                     </div>
                                 </li>
@@ -1027,7 +825,7 @@
                                     </div>
                                     <div class="text-box">
                                         <p>
-                                            <a href="mailto:yourmailsupport@gmail.com">yourmailsupport@gmail.com</a>
+                                            <a href="mailto:yourmailsuppot@gmail.com">info@gawaisquare.com</a>
                                         </p>
                                     </div>
                                 </li>
@@ -1200,7 +998,7 @@
                                 <span class="icon-mail-inbox-app"></span>
                             </div>
                             <div class="text">
-                                <p><a href="mailto:yourmailsupport@gmail.com">yourmailsupport@gmail.com</a></p>
+                                <p><a href="mailto:yourmailsupport@gmail.com">info@gawaisquare.com</a></p>
                             </div>
                         </div>
 
